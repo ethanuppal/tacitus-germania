@@ -20,7 +20,7 @@ body {
 .container {
     background-color: var(--tea-green);
     max-width: 1500px;
-    margin: 0px 20px;
+    margin: 0px auto;
     border-radius: 15px;
 }
 
