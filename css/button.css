@@ -1,0 +1,15 @@
+/* Copyright (C) 2023 Ethan Uppal. All rights reserved. */
+
+button {
+    border-style: none;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+button:hover {
+    filter: brightness(80%);
+}
+
+.disabled, .disabled:hover {
+    filter: opacity(80%);
+}

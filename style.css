@@ -1,0 +1,65 @@
+/* Copyright (C) 2023 Ethan Uppal. All rights reserved. */
+
+@import "css/stack.css";
+@import "css/button.css";
+
+:root {
+    /* Palate generated in https://coolors.co */
+    --outer-space: #4C5B61;
+    --tea-green: #D7FCD4;
+    --celadon: #B6CCA1;
+    --dark-goldenrod: #B68F40;
+    --rich-black: #07090F;
+}
+
+body {
+    background-color: var(--rich-black);
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: var(--tea-green);
+    max-width: 1500px;
+    margin: 0px 20px;
+    border-radius: 15px;
+}
+
+.safe-area {
+    padding: 8px;
+}
+
+/* Based on https://www.w3schools.com/howto/howto_css_vertical_line.asp */
+/* .vl {
+    border-left: 2px solid;
+    height: 100%;
+} */
+
+#subtitle {
+    margin-top: 0;
+}
+
+.section-heading {
+    margin-bottom: 0;
+}
+
+.stack-box-embed {
+    padding: 5px;
+}
+
+#text-container {
+    border-style: solid;
+    flex-basis: 100%;
+    width: 200px;
+    margin-right: 4px;
+}
+
+#commentary-container {
+    border-style: solid;
+    flex-basis: 100%;
+    width: 200px;
+    margin-left: 4px;
+}
+
+#navigation {
+    margin-top: 8px;
+}

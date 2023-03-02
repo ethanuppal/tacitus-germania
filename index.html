@@ -1,0 +1,60 @@
+<!-- Copyright (C) 2023 Ethan Uppal. All rights reserved. -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" charset="utf-8"></script>
+        <title>Taciti de Germania Liber</title>
+    </head>
+    <body onload="main();">
+        <div class="container">
+            <div class="safe-area">
+                <div class="stack-vertical">
+                    <div class="stack-vertical">
+                        <div class="centerer">
+                            <h1 id="title">Taciti de Germania Liber et Commentarii</h1>
+                        </div>
+                        <div class="centerer">
+                            <h2 id="subtitle">Chapter <span id="chapter-number">1</span></h2>
+                        </div>
+                        </div>
+                    <div class="stack-horizontal stack-wrap">
+                        <div id="text-container" class="stack-vertical stack-box-embed">
+                            <div class="centerer">
+                                <h3 class="section-heading">Source</h3>
+                            </div>
+                            <p id="chapter-text"></p>
+                            <p>This text is taken from <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3atext%3a2007.01.0090">Perseus</a>.</p>
+                        </div>
+                        <div id="commentary-container" class="stack-vertical stack-box-embed">
+                            <div class="centerer">
+                                <h3 class="section-heading">Commentary</h3>
+                            </div>
+                            <div id="commentary">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="navigation" class="stack-horizontal">
+                        <button
+                            id="previous-chapter"
+                            class="pin-left"
+                            type="button"
+                            onclick="changeChapterIndexBy(-1);">
+                            &lt; Previous
+                        </button>
+                        <button
+                            id="next-chapter"
+                            class="pin-right"
+                            type="button"
+                            onclick="changeChapterIndexBy(1);">
+                            Next &gt;
+                        </button>
+                    </div>
+                </div>
+                <div class="clear-fix" />
+            </div>
+        </div>
+    </body>
+</html>
