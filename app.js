@@ -133,7 +133,7 @@ function loadTextAndCommentary() {
 function whitakersLookupRequested() {
     if (whitakersInput.value != '') {
         console.log(whitakersFrame)
-        whitakersFrame.src = `http://www.archives.nd.edu/cgi-bin/wordz.pl?keyword=${whitakersInput.value}`;
+        whitakersFrame.src = `https://www.archives.nd.edu/cgi-bin/wordz.pl?keyword=${whitakersInput.value}`;
         whitakersFrame.classList.remove('hidden');
     }
 }
