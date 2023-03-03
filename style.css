@@ -88,6 +88,27 @@ body {
         margin-top: 48px;
     }
 }
+@media only screen and (max-height: 480px) {
+    #navigation {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: var(--celadon);
+        padding: 8px;
+    }
+
+    #previous-chapter, #next-chapter {
+        border-style: solid;
+        border-color: black;
+        font-size: 24px;
+    }
+
+    #content {
+        transform: translateY(-48px);
+        margin-top: 48px;
+    }
+}
 
 #whitakers-lookup {
     padding: 8px;

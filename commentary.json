@@ -109,7 +109,28 @@
                 ]
             },
             {
-                "text": "quis porro, praeter periculum horridi et ignoti maris, Asia aut Africa aut Italia relicta Germaniam peteret, informem terris, asperam caelo, tristem cultu aspectuque nisi si patria sit?"
+                "text": "#quis# porro, praeter periculum #horridi et ignoti maris#, #Asia aut Africa aut Italia relicta# Germaniam peteret, informem #terris#, asperam caelo, tristem cultu aspectuque nisi si #patria# sit?",
+                "notes": [
+                    {
+                        "text": "rhetorical question."
+                    },
+                    {
+                        "link": "https://dcc.dickinson.edu/grammar/latin/genitive",
+                        "text": "objective genitive (A&G 347)."
+                    },
+                    {
+                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-absolute",
+                        "text": "ablative absolute."
+                    },
+                    {
+                        "word": "terris, caelo, cultu, aspectu",
+                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-specification",
+                        "text": "ablative of respect."
+                    },
+                    {
+                        "text": "eius (qui petit)"
+                    }
+                ]
             },
             {
                 "text": "Celebrant carminibus antiquis, quod unum apud illos memoriae et annalium genus est, Tuistonem deum terra editum. ei filium Mannum originem gentis conditoresque Manno tres filios adsignant, e quorum nominibus proximi Oceano Ingaevones, medii Herminones, ceteri Istaevones vocentur."
