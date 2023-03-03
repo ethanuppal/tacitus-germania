@@ -91,6 +91,7 @@ function loadTextAndCommentary() {
 
     const chapter = chapters[chapterIndex];
     var sectionNumber = 1;
+    var foundNotes = false;
     for (const section of chapter.sections) {
         // Add section text
         if (sectionNumber > 1) {
@@ -100,6 +101,7 @@ function loadTextAndCommentary() {
 
         // Add commentary notes
         if (section.notes != null) {
+            foundNotes = true;
             const noteWords = [...section.text.matchAll(regex)];
             for (const package of zip(noteWords, section.notes)) {
                 const note = package[1];
@@ -118,6 +120,14 @@ function loadTextAndCommentary() {
         // Next section
         sectionNumber++;
     }
+
+    if (!foundNotes) {
+        const messageP = document.createElement('p');
+        messageP.textContent = "Looks like there aren't any notes for this section yet!";
+        commentaryDiv.append(messageP);
+    }
+
+    window.scrollTo(0, 0);
 }
 
 function whitakersLookupRequested() {

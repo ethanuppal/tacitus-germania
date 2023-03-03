@@ -2,8 +2,11 @@
     {
     	"sections": [
             {
-    			"text": "Germania omnis a #Gallis# #Raetis#que et #Pannoniis# #Rheno et Danubio fluminibus#, a #Sarmatis# #Dacis#que mutuo metu aut montibus separatur: cetera Oceanus #ambit#, latos sinus et insularum immensa spatia complectens, nuper cognitis quibusdam gentibus ac regibus, quos bellum aperuit.",
+    			"text": "#Germania omnis# a #Gallis# #Raetis#que et #Pannoniis# #Rheno et Danubio fluminibus#, a #Sarmatis# #Dacis#que mutuo metu aut montibus separatur: cetera Oceanus #ambit#, latos sinus et insularum immensa spatia complectens, nuper cognitis quibusdam gentibus ac regibus, quos bellum aperuit.",
                 "notes": [
+                    {
+                        "text": "Note the similarity to how Caesar starts B.G. (“Gallia est omnis divisa”); Tacitus writes “Germania omnis...separatur”"
+                    },
                     {
                         "word": "Gallis, etc.",
                         "link": "https://dcc.dickinson.edu/grammar/latin/ablative-separation",
@@ -64,7 +67,7 @@
                     {
                         "word": "edito iugo",
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Djugum",
-                        "text": "A height or summit of a mountain, a ridge; also, a chain of mountains (L&S)."
+                        "text": "iugum here is “a height or summit of a mountain, a ridge; also, a chain of mountains” (L&S)."
                     },
                     {
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dmeatus",
@@ -77,7 +80,33 @@
     {
         "sections": [
             {
-                "text": "Ipsos Germanos indigenas crediderim minimeque aliarum gentium adventibus et hospitiis mixtos, quia nec terra olim sed classibus advehebantur qui mutare sedes quaerebant, et immensus ultra utque sic dixerim adversus Oceanus raris ab orbe nostro navibus aditur."
+                "text": "Ipsos Germanos indigenas #crediderim# minimeque aliarum gentium adventibus et hospitiis #mixtos#, quia nec terra olim sed classibus #advehebantur# qui #mutare sedes# quaerebant, et immensus #ultra utque sic dixerim adversus# Oceanus raris ab #orbe nostro# #navibus# aditur.",
+                "notes": [
+                    {
+                        "text": "indirect speech; esse is gapped."
+                    },
+                    {
+                        "text": "mixed with (in a racial sense)."
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dadveho",
+                        "text": "to be carried, to ride, to come to a place upon a horse, in a carriage, ship, etc (L&S)."
+                    },
+                    {
+                        "text": "emigrate, not immigrate."
+                    },
+                    {
+                        "text": "Tacitus's remark."
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dorbis",
+                        "text": "The orbis terrarum is “the circle or orb of the earth, the world” (L&S)."
+                    },
+                    {
+                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-means",
+                        "text": "ablative of means."
+                    }
+                ]
             },
             {
                 "text": "quis porro, praeter periculum horridi et ignoti maris, Asia aut Africa aut Italia relicta Germaniam peteret, informem terris, asperam caelo, tristem cultu aspectuque nisi si patria sit?"
