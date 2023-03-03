@@ -2,17 +2,22 @@
 
 var chapters;
 var chapterIndex = 0;
+var textContainerHeightDiv;
+var commentaryContainerDiv;
 var chapterTextP;
 var commentaryDiv;
 var previousButton;
 var nextButton;
 var chapterNumberSpan;
+var commentaryHeightMatcher;
 var regex = "\\#(.*?)\\#";
 
 // https://stackoverflow.com/questions/22015684/zip-arrays-in-javascript
 var zip = (a, b) => a.map((k, i) => [k, b[i]]);
 
 function main() {
+    textContainerHeightDiv = document.getElementById('text-container-height');
+    commentaryContainerDiv = document.getElementById('commentary-container');
     chapterTextP = document.getElementById('chapter-text');
     commentaryDiv = document.getElementById('commentary');
     previousButton = document.getElementById('previous-chapter');
@@ -23,7 +28,6 @@ function main() {
         .then(response => response.text())
         .then(data => {
             chapters = JSON.parse(data);
-            console.log(chapters);
 
             const chapterIndexTry = localStorage.getItem('chapter_index');
             if (chapterIndexTry != null) {
@@ -34,6 +38,11 @@ function main() {
             setNavigationEnabled();
             loadTextAndCommentary();
     });
+
+    // Horribly inefficient but it works.
+    commentaryHeightMatcher = new ResizeObserver(() => {
+        commentaryContainerDiv.style.height = `${textContainerHeightDiv.offsetHeight}px`;
+    }).observe(textContainerHeightDiv);
 }
 
 

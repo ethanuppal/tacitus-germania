@@ -4,6 +4,10 @@
     clear: both;
 }
 
+.flex-container {
+    display: flex;
+}
+
 .stack-vertical {
     display: flex;
     flex-direction: column;

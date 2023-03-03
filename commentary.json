@@ -2,8 +2,13 @@
     {
     	"sections": [
             {
-    			"text": "Germania omnis a Gallis #Raetis#que et #Pannoniis# Rheno et Danubio fluminibus, a #Sarmatis# #Dacis#que mutuo metu aut montibus separatur: cetera Oceanus ambit, latos sinus et insularum immensa spatia complectens, nuper cognitis quibusdam gentibus ac regibus, quos bellum aperuit.",
+    			"text": "Germania omnis a #Gallis# #Raetis#que et #Pannoniis# #Rheno et Danubio fluminibus#, a #Sarmatis# #Dacis#que mutuo metu aut montibus separatur: cetera Oceanus #ambit#, latos sinus et insularum immensa spatia complectens, nuper cognitis quibusdam gentibus ac regibus, quos bellum aperuit.",
                 "notes": [
+                    {
+                        "word": "Gallis, etc.",
+                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-separation",
+                        "text": "ablative of separation."
+                    },
                     {
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0059:entry=Raeti",
                         "text": "the Raetians, a mountain people north of the Po, between the Danube, the Rhine, and the Lech (L&S)."
@@ -13,27 +18,45 @@
                         "text": "inhabitants of \"Pannonia, province of the Roman Empire, corresponding to present-day western Hungary and parts of eastern Austria, as well as portions of several Balkan states, primarily Slovenia, Croatia, and Serbia (Vojvodina)\" (Britannica)."
                     },
                     {
+                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-agent",
+                        "text": "ablative of agent"
+                    },
+                    {
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0059:entry=Sarmata",
                         "text": "the Sarmatians (L&S)."
                     },
                     {
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0059:entry=Daci",
                         "text": "the Dacians, a famous warlike people, akin to the Thracians. They occupied what is now Upper Hungary, Transylvania, Moldavia, Wallachia, Bessarabia. Subdued by Trajan, they received Roman civilization, and thence retain in part the name Rumanians (L&S)."
+                    },
+                    {
+                        "text": "whence English \"ambient\"."
                     }
                 ]
     		},
     		{
-    			"text": "Rhenus, #Raeticarum Alpium# inaccesso ac praecipiti vertice ortus, modico flexu in occidentem versus septentrionali Oceano miscetur.",
+    			"text": "Rhenus, #Raeticarum Alpium# #inaccesso ac praecipiti vertice# ortus, #modico flexu# in occidentem versus septentrionali Oceano miscetur.",
     			"notes": [
                     {
         				"link": "https://pleiades.stoa.org/places/187272",
-        				"text": "The Rhaetian Alps extend from the valley of the Rhine river to the Brenner Pass."
-        			}
+        				"text": "The Rhaetian Alps extend from the valley of the Rhine river to the Brenner Pass (Pleiades)."
+        			},
+                    {
+                        "link": "https://www.britannica.com/place/Rhaetian-Alps",
+                        "text": "Bernina Peak (13,284 feet [4,049 m]), on the Italian border, is the highest point (Britannica)."
+                    },
+                    {
+                        "text": "referring to the path of the river."
+                    }
                 ]
     		},
             {
-                "text": "Danubius molli et clementer edito montis #Abnobae# #iugo# effusus plures populos adit, donec in Ponticum mare sex meatibus erumpat; septimum os paludibus hauritur.",
+                "text": "Danubius #molli et clementer# edito #montis Abnobae# #iugo# effusus plures populos adit, donec in Ponticum mare sex meatibus erumpat; septimum os paludibus hauritur.",
                 "notes": [
+                    {
+                        "link": "https://www.britannica.com/place/Danube-River",
+                        "text": "Beyond the Iron Gate the lower Danube flows across a wide plain; the river becomes shallower and broader, and its current slows down (Britannica)."
+                    },
                     {
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0059:entry=Abnoba",
                         "text": "a mountain range in Germany, the northern part of the Black Forest, in which the Danube rises (L&S)."

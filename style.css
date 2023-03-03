@@ -34,8 +34,9 @@ body {
     height: 100%;
 } */
 
-#subtitle {
-    margin-top: 0;
+#title {
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .section-heading {
@@ -58,8 +59,41 @@ body {
     flex-basis: 100%;
     width: 200px;
     margin-left: 4px;
+
+    /* https://stackoverflow.com/questions/14380442/make-one-section-of-simple-web-page-have-own-scroll-bar */
+    overflow-y: auto;
 }
 
 #navigation {
     margin-top: 8px;
+}
+
+/* Phones */
+@media only screen and (max-width: 720px) {
+    #navigation {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: var(--celadon);
+        padding: 8px;
+    }
+
+    #previous-chapter, #next-chapter {
+        border-style: solid;
+        border-color: black;
+        font-size: 24px;
+    }
+
+    #content {
+        transform: translateY(-48px);
+        margin-top: 48px;
+    }
+}
+
+h3 {
+    font-size: 24px;
+}
+p, button {
+    font-size: 20px;
 }
