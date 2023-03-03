@@ -15,7 +15,7 @@
                     },
                     {
                         "link": "https://pleiades.stoa.org/places/197425/pannonii",
-                        "text": "inhabitants of \"Pannonia, province of the Roman Empire, corresponding to present-day western Hungary and parts of eastern Austria, as well as portions of several Balkan states, primarily Slovenia, Croatia, and Serbia (Vojvodina)\" (Britannica)."
+                        "text": "inhabitants of “Pannonia, province of the Roman Empire, corresponding to present-day western Hungary and parts of eastern Austria, as well as portions of several Balkan states, primarily Slovenia, Croatia, and Serbia (Vojvodina)” (Britannica)."
                     },
                     {
                         "link": "https://dcc.dickinson.edu/grammar/latin/ablative-agent",
@@ -30,7 +30,7 @@
                         "text": "the Dacians, a famous warlike people, akin to the Thracians. They occupied what is now Upper Hungary, Transylvania, Moldavia, Wallachia, Bessarabia. Subdued by Trajan, they received Roman civilization, and thence retain in part the name Rumanians (L&S)."
                     },
                     {
-                        "text": "whence English \"ambient\"."
+                        "text": "whence English “ambient”."
                     }
                 ]
     		},
@@ -51,7 +51,7 @@
                 ]
     		},
             {
-                "text": "Danubius #molli et clementer# edito #montis Abnobae# #iugo# effusus plures populos adit, donec in Ponticum mare sex meatibus erumpat; septimum os paludibus hauritur.",
+                "text": "Danubius #molli et clementer# edito #montis Abnobae# #iugo# effusus plures populos adit, donec #in Ponticum mare sex meatibus erumpat#; septimum os paludibus hauritur.",
                 "notes": [
                     {
                         "link": "https://www.britannica.com/place/Danube-River",
@@ -62,8 +62,13 @@
                         "text": "a mountain range in Germany, the northern part of the Black Forest, in which the Danube rises (L&S)."
                     },
                     {
+                        "word": "edito iugo",
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Djugum",
                         "text": "A height or summit of a mountain, a ridge; also, a chain of mountains (L&S)."
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dmeatus",
+                        "text": "discharges itself through six channels; cf.: “bifido meatu divisus Rhenus,” divided into two channels, Claud. B. G. 336. (L&S)."
                     }
                 ]
             }

@@ -12,6 +12,10 @@
     --rich-black: #07090F;
 }
 
+.hidden {
+    display: none;
+}
+
 body {
     background-color: var(--rich-black);
     font-family: sans-serif;
@@ -83,6 +87,15 @@ body {
         transform: translateY(-48px);
         margin-top: 48px;
     }
+}
+
+#whitakers-lookup {
+    padding: 8px;
+    font-size: 20px;
+}
+
+#whitakers-input {
+    vertical-align: baseline;
 }
 
 h3 {

@@ -39,6 +39,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="whitakers-lookup" class="stack-vertical">
+                            <div class="stack-vertical">
+                                <label id="whitakers-label" for="whitakers">Search in William Whitaker's Words</label>
+                                <div class="stack-horizontal">
+                                    <input id="whitakers-input" type="text" name="whitakers" placeholder="Enter a Latin word" >
+                                    <button type="button" onclick="whitakersLookupRequested();">Lookup</button>
+                                </div>
+                            </div>
+                            <iframe id="whitakers-frame" class="hidden" width="100%" height="200px;" sandbox></iframe>
+                        </div>
                     </div>
                     <div id="navigation" class="stack-horizontal">
                         <button

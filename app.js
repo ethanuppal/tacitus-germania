@@ -2,14 +2,12 @@
 
 var chapters;
 var chapterIndex = 0;
-var textContainerHeightDiv;
-var commentaryContainerDiv;
-var chapterTextP;
-var commentaryDiv;
-var previousButton;
-var nextButton;
+var textContainerHeightDiv, commentaryContainerDiv;
+var chapterTextP, commentaryDiv;
+var previousButton, nextButton;
 var chapterNumberSpan;
 var commentaryHeightMatcher;
+var whitakersFrame, whitakersInput;
 var regex = "\\#(.*?)\\#";
 
 // https://stackoverflow.com/questions/22015684/zip-arrays-in-javascript
@@ -23,6 +21,8 @@ function main() {
     previousButton = document.getElementById('previous-chapter');
     nextButton = document.getElementById('next-chapter');
     chapterNumberSpan = document.getElementById('chapter-number');
+    whitakersFrame = document.getElementById('whitakers-frame');
+    whitakersInput = document.getElementById('whitakers-input');
 
     fetch('commentary.json')
         .then(response => response.text())
@@ -44,8 +44,6 @@ function main() {
         commentaryContainerDiv.style.height = `${textContainerHeightDiv.offsetHeight}px`;
     }).observe(textContainerHeightDiv);
 }
-
-
 
 function setButtonEnabled(button, isEnabled) {
     button.disabled = !isEnabled;
@@ -104,21 +102,28 @@ function loadTextAndCommentary() {
         if (section.notes != null) {
             const noteWords = [...section.text.matchAll(regex)];
             for (const package of zip(noteWords, section.notes)) {
-                const noteWord = package[0][1];
                 const note = package[1];
+                const noteWord = note.word ?? package[0][1];
 
                 const noteP = document.createElement('p');
-                if (note.link != null) {
-                    noteP.innerHTML += `<a href=${note.link} target="_blank" style="font-weight: bold;">${noteWord}</a>`;
-                } else {
-                    noteP.innerHTML += `<span style="font-weight: bold;">${noteWord}</span>`;
-                }
+                noteP.innerHTML += `<span style="font-weight: bold;">${noteWord}</span>`;
                 noteP.innerHTML += `[${sectionNumber}]: ${note.text}`;
+                if (note.link != null) {
+                    noteP.innerHTML += ` <a href=${note.link} target="_blank">(link)</a>`;
+                }
                 commentaryDiv.append(noteP);
             }
         }
 
         // Next section
         sectionNumber++;
+    }
+}
+
+function whitakersLookupRequested() {
+    if (whitakersInput.value != '') {
+        console.log(whitakersFrame)
+        whitakersFrame.src = `http://www.archives.nd.edu/cgi-bin/wordz.pl?keyword=${whitakersInput.value}`;
+        whitakersFrame.classList.remove('hidden');
     }
 }
