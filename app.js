@@ -7,7 +7,7 @@ var chapterTextP, commentaryDiv;
 var previousButton, nextButton;
 var chapterNumberSpan;
 var commentaryHeightMatcher;
-var whitakersFrame, whitakersInput;
+var perseusFrame, perseusInput;
 var regex = "\\#(.*?)\\#";
 
 // https://stackoverflow.com/questions/22015684/zip-arrays-in-javascript
@@ -21,8 +21,8 @@ function main() {
     previousButton = document.getElementById('previous-chapter');
     nextButton = document.getElementById('next-chapter');
     chapterNumberSpan = document.getElementById('chapter-number');
-    whitakersFrame = document.getElementById('whitakers-frame');
-    whitakersInput = document.getElementById('whitakers-input');
+    perseusFrame = document.getElementById('perseus-frame');
+    perseusInput = document.getElementById('perseus-input');
 
     fetch('commentary.json')
         .then(response => response.text())
@@ -130,10 +130,10 @@ function loadTextAndCommentary() {
     window.scrollTo(0, 0);
 }
 
-function whitakersLookupRequested() {
-    if (whitakersInput.value != '') {
-        console.log(whitakersFrame)
-        whitakersFrame.src = `https://www.archives.nd.edu/cgi-bin/wordz.pl?keyword=${whitakersInput.value}`;
-        whitakersFrame.classList.remove('hidden');
+function perseusLookupRequested() {
+    if (perseusInput.value != '') {
+        console.log(perseusFrame)
+        perseusFrame.src = `http://www.perseus.tufts.edu/hopper/morph?la=la&l=${perseusInput.value}`;
+        perseusFrame.classList.remove('hidden');
     }
 }

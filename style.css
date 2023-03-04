@@ -110,12 +110,16 @@ body {
     }
 }
 
-#whitakers-lookup {
+#perseus-label {
+    margin-top: 8px;
+}
+
+#perseus-lookup {
     padding: 8px;
     font-size: 20px;
 }
 
-#whitakers-input {
+#perseus-input {
     vertical-align: baseline;
 }
 
