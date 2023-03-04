@@ -22,7 +22,7 @@
                     },
                     {
                         "link": "https://dcc.dickinson.edu/grammar/latin/ablative-agent",
-                        "text": "ablative of agent"
+                        "text": "ablative of agent."
                     },
                     {
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0059:entry=Sarmata",
@@ -133,13 +133,68 @@
                 ]
             },
             {
-                "text": "Celebrant carminibus antiquis, quod unum apud illos memoriae et annalium genus est, Tuistonem deum terra editum. ei filium Mannum originem gentis conditoresque Manno tres filios adsignant, e quorum nominibus proximi Oceano Ingaevones, medii Herminones, ceteri Istaevones vocentur."
+                "text": "Celebrant #carminibus antiquis#, quod unum apud illos memoriae et #annalium# genus est, #Tuistonem deum# #terra# editum. ei filium #Mannum# originem gentis conditoresque Manno tres filios adsignant, e quorum nominibus proximi Oceano Ingaevones, medii Herminones, ceteri Istaevones vocentur.",
+                "notes": [
+                    {
+                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-means",
+                        "text": "ablative of means."
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0060%3Aentry%3Dannalis2",
+                        "text": "a record of events, chronicles, annals (L&S)."
+                    },
+                    {
+                        "text": "object of celebrant."
+                    },
+                    {
+                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-separation",
+                        "text": "ablative of separation."
+                    },
+                    {
+                        "word": "Tuistonem, Mannum",
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry=germania-geo&highlight=tuisco",
+                        "text": "The ancients, however, are agreed in stating that the Germans worshipped several divinities, among whom they mention the sun, the moon, the stars, Tuisco the ancestor of their whole race, and his son Mannus (Smith, 1845)."
+                    }
+                ]
             },
             {
-                "text": "quidam, ut in licentia vetustatis, plures deo ortos pluresque gentis appellationes, Marsos Gambrivios Suebos Vandilios adfirmant, eaque vera et antiqua nomina."
+                "text": "#quidam#, ut in #licentia vetustatis#, #plures deo ortos# #pluresque gentis appellationes#, Marsos Gambrivios Suebos Vandilios adfirmant, #eaque vera et antiqua nomina#.",
+                "notes": [
+                    {
+                        "text": "subject of adfirmant."
+                    },
+                    {
+                        "text": "“the freedom of conjecture permitted by antiquity” (Church and Brodribb)."
+                    },
+                    {
+                        "text": "(esse)."
+                    },
+                    {
+                        "text": "(esse)."
+                    },
+                    {
+                        "text": "(esse)."
+                    }
+                ]
             },
             {
-                "text": "ceterum Germaniae vocabulum recens et nuper additum, quoniam qui primi Rhenum transgressi Gallos expulerint ac nunc Tungri, tunc Germani vocati sint: ita nationis nomen, non gentis, evaluisse paulatim, ut omnes primum a victore ob metum, mox et a se ipsis invento nomine Germani vocarentur."
+                "text": "#ceterum# Germaniae vocabulum recens et nuper additum, quoniam qui primi Rhenum transgressi Gallos expulerint ac nunc #Tungri#, #tunc Germani vocati sint#: ita nationis nomen, non gentis, evaluisse paulatim, #ut# omnes primum a victore ob metum, mox et a se ipsis invento nomine Germani vocarentur.",
+                "notes": [
+                    {
+                        "text": "“on the other hand” (Church and Brodribb)."
+                    },
+                    {
+                        "text": "gives a name to the qui earlier in the phrase."
+                    },
+                    {
+                        "word": "qui...sint",
+                        "text": "“the tribes which first crossed the Rhine and drove out the Gauls, and are now called Tungrians, were then called Germans” (Church and Brodribb)."
+                    },
+                    {
+                        "link": "https://dcc.dickinson.edu/grammar/latin/result-clauses",
+                        "text": "result clause."
+                    }
+                ]
             }
         ]
     },
