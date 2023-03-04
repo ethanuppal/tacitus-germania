@@ -133,7 +133,7 @@ function loadTextAndCommentary() {
 function perseusLookupRequested() {
     if (perseusInput.value != '') {
         console.log(perseusFrame)
-        perseusFrame.src = `http://www.perseus.tufts.edu/hopper/morph?la=la&l=${perseusInput.value}`;
+        perseusFrame.src = `https://www.perseus.tufts.edu/hopper/morph?la=la&l=${perseusInput.value}`;
         perseusFrame.classList.remove('hidden');
     }
 }
