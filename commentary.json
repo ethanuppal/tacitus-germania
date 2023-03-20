@@ -201,8 +201,14 @@
     {
         "sections": [
             {
-                "text": "Fuisse et apud eos Herculem memorant, primumque omnium virorum fortium ituri in proelia canunt. sunt illis haec quoque carmina quorum relatu, quem baritum vocant, accendunt animos futuraeque pugnae fortunam ipso cantu augurantur; terrent enim trepidantve, prout sonuit acies, nec tam vocis ille quam virtutis concentus videtur."
-            },
+                "text": "Fuisse et apud eos Herculem memorant, primumque omnium virorum fortium ituri in proelia canunt. sunt #illis# haec quoque carmina quorum relatu, quem #baritum# vocant, accendunt animos #futuraeque pugnae# fortunam ipso cantu augurantur; #terrent# enim trepidantve, prout sonuit acies, nec tam vocis ille quam virtutis concentus videtur."
+            "notes": [
+{ "text": "dative of posesssion or reference?" },
+{ "text": "German war cry" },
+{ "text": "objective genitive" },
+{ "text": "zero idea what this means through the rest of the sentence" }
+]
+},
             {
                 "text": "adfectatur praecipue asperitas soni et fractum murmur, obiectis ad os scutis, quo plenior et gravior vox repercussu"
             },
