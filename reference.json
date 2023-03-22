@@ -2,5 +2,32 @@
     "obj-gen": {
         "link": "https://dcc.dickinson.edu/grammar/latin/genitive",
         "text": "objective genitive (A&G 347)."
+    },
+    "abl-abs": {
+        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-absolute",
+        "text": "ablative absolute."
+    },
+    "abl-mns": {
+        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-means",
+        "text": "ablative of means."
+    },
+    "abl-sep": {
+        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-separation",
+        "text": "ablative of separation."
+    },
+    "abl-agn": {
+        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-agent",
+        "text": "ablative of agent."
+    },
+    "dat-pos": {
+        "link": "https://dcc.dickinson.edu/grammar/latin/dative-possession",
+        "text": "dative of posesssion."
+    },
+    "ind-sp": {
+        "text": "(esse)."
+    },
+    "res-cls": {
+        "link": "https://dcc.dickinson.edu/grammar/latin/result-clauses",
+        "text": "result clause."
     }
 }

@@ -5,12 +5,11 @@
     			"text": "#Germania omnis# a #Gallis# #Raetis#que et #Pannoniis# #Rheno et Danubio fluminibus#, a #Sarmatis# #Dacis#que mutuo metu aut montibus separatur: cetera Oceanus #ambit#, latos sinus et insularum immensa spatia #complectens#, #nuper cognitis quibusdam gentibus ac regibus#, quos bellum aperuit.",
                 "notes": [
                     {
-                        "text": "Note the similarity to how Caesar starts B.G. (“Gallia est omnis divisa”); Tacitus writes “Germania omnis...separatur”"
+                        "text": "Note the similarity to how Caesar starts B.G. (“Gallia est omnis divisa”); Tacitus writes “Germania omnis...separatur”."
                     },
                     {
                         "word": "Gallis, etc.",
-                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-separation",
-                        "text": "ablative of separation."
+                        "ref": "abl-sep"
                     },
                     {
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0059:entry=Raeti",
@@ -21,8 +20,7 @@
                         "text": "inhabitants of “Pannonia, province of the Roman Empire, corresponding to present-day western Hungary and parts of eastern Austria, as well as portions of several Balkan states, primarily Slovenia, Croatia, and Serbia (Vojvodina)” (Britannica)."
                     },
                     {
-                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-agent",
-                        "text": "ablative of agent."
+                        "ref": "abl-agn"
                     },
                     {
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0059:entry=Sarmata",
@@ -40,13 +38,12 @@
                     },
                     {
                         "word": "nuper...regibus",
-                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-absolute",
-                        "text": "ablative absolute."
+                        "ref": "abl-abs"
                     }
                 ]
     		},
     		{
-    			"text": "Rhenus, #Raeticarum Alpium# #inaccesso ac praecipiti vertice# ortus, #modico flexu# in occidentem versus septentrionali Oceano miscetur.",
+    			"text": "Rhenus, #Raeticarum Alpium# #inaccesso ac praecipiti vertice# #ortus#, #modico flexu# in occidentem versus septentrionali Oceano miscetur.",
     			"notes": [
                     {
         				"link": "https://pleiades.stoa.org/places/187272",
@@ -57,12 +54,15 @@
                         "text": "Bernina Peak (13,284 feet [4,049 m]), on the Italian border, is the highest point (Britannica)."
                     },
                     {
+                        "text": "“springs” (Church and Brodribb 1942): an active translation is acceptable here."
+                    },
+                    {
                         "text": "referring to the path of the river."
                     }
                 ]
     		},
             {
-                "text": "Danubius #molli et clementer# edito #montis Abnobae# #iugo# effusus plures populos adit, donec #in Ponticum mare sex meatibus erumpat#; septimum os paludibus hauritur.",
+                "text": "Danubius #molli et clementer# edito #montis Abnobae# #iugo# #effusus# plures populos adit, donec #in Ponticum mare sex meatibus erumpat#; septimum os paludibus hauritur.",
                 "notes": [
                     {
                         "link": "https://www.britannica.com/place/Danube-River",
@@ -76,6 +76,9 @@
                         "word": "edito iugo",
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Djugum",
                         "text": "iugum here is “a height or summit of a mountain, a ridge; also, a chain of mountains” (L&S)."
+                    },
+                    {
+                        "text": "“pours down” (Church and Brodribb 1942): an active translation is acceptable here."
                     },
                     {
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dmeatus",
@@ -111,8 +114,7 @@
                         "text": "The orbis terrarum is “the circle or orb of the earth, the world” (L&S)."
                     },
                     {
-                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-means",
-                        "text": "ablative of means."
+                        "ref": "abl-mns"
                     }
                 ]
             },
@@ -126,8 +128,7 @@
                         "ref": "obj-gen"
                     },
                     {
-                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-absolute",
-                        "text": "ablative absolute."
+                        "ref": "abl-abs"
                     },
                     {
                         "word": "terris, caelo, cultu, aspectu",
@@ -140,11 +141,10 @@
                 ]
             },
             {
-                "text": "Celebrant #carminibus antiquis#, quod unum apud illos memoriae et #annalium# genus est, #Tuistonem deum# #terra# editum. ei filium #Mannum# originem gentis conditoresque Manno tres filios adsignant, e quorum nominibus proximi Oceano Ingaevones, medii Herminones, ceteri Istaevones vocentur.",
+                "text": "Celebrant #carminibus antiquis#, quod unum apud illos memoriae et #annalium# genus est, #Tuistonem deum# #terra# editum. ei filium #Mannum# originem gentis conditoresque Manno tres filios adsignant, e quorum nominibus proximi Oceano Ingaevones, medii Herminones, ceteri Istaevones #vocentur#.",
                 "notes": [
                     {
-                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-means",
-                        "text": "ablative of means."
+                        "ref": "abl-mns"
                     },
                     {
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0060%3Aentry%3Dannalis2",
@@ -154,13 +154,16 @@
                         "text": "object of celebrant, or subject of indirect speech introduced by celebrant."
                     },
                     {
-                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-separation",
-                        "text": "ablative of separation."
+                        "ref": "abl-sep"
                     },
                     {
                         "word": "Tuistonem, Mannum",
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry=germania-geo&highlight=tuisco",
                         "text": "The ancients, however, are agreed in stating that the Germans worshipped several divinities, among whom they mention the sun, the moon, the stars, Tuisco [sic] the ancestor of their whole race, and his son Mannus (Smith 1845). The best manuscripts have the spelling with ‘t’ and not ‘c’ (Stuart 1875)."
+                    },
+                    {
+                        "link": "https://archive.org/details/germaniaagricola00taciiala/page/140/mode/2up",
+                        "text": "The subjunctive here (in <i>oratio olbiqua</i>) shows that Tacitus makes the statement not on his authority, but on that of others (Stuart 1875)."
                     }
                 ]
             },
@@ -174,13 +177,13 @@
                         "text": "“the freedom of conjecture permitted by antiquity” (Church and Brodribb 1942), cf. Livy's praefatio."
                     },
                     {
-                        "text": "(esse)."
+                        "ref": "ind-sp"
                     },
                     {
                         "text": "(ortos esse)."
                     },
                     {
-                        "text": "(esse)."
+                        "ref": "ind-sp"
                     }
                 ]
             },
@@ -198,8 +201,7 @@
                         "text": "“the tribes which first crossed the Rhine and drove out the Gauls, and are now called Tungrians, were then called Germans” (Church and Brodribb 1942)."
                     },
                     {
-                        "link": "https://dcc.dickinson.edu/grammar/latin/result-clauses",
-                        "text": "result clause."
+                        "ref": "res-cls"
                     }
                 ]
             }
@@ -208,11 +210,16 @@
     {
         "sections": [
             {
-                "text": "Fuisse et apud eos Herculem memorant, primumque omnium virorum fortium ituri in proelia canunt. sunt #illis# haec quoque carmina quorum relatu, quem #baritum# vocant, accendunt animos #futuraeque pugnae# fortunam ipso cantu augurantur; terrent enim trepidantve, prout sonuit acies, nec tam vocis ille quam virtutis concentus videtur.",
+                "text": "Fuisse #et# apud eos Herculem memorant, primumque omnium virorum fortium #ituri# in proelia canunt. sunt #illis# haec quoque carmina quorum relatu, quem #baritum# vocant, accendunt animos #futuraeque pugnae# fortunam ipso cantu augurantur; terrent enim trepidantve, #prout# sonuit acies, #nec tam vocis ille quam virtutis concentus videtur#.",
                 "notes": [
                     {
-                        "link": "https://dcc.dickinson.edu/grammar/latin/dative-possession",
-                        "text": "dative of posesssion."
+                        "text": "also, too."
+                    },
+                    {
+                        "text": "(Germani) ituri; subject of canunt."
+                    },
+                    {
+                        "ref": "dat-pos"
                     },
                     {
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dbaritus",
@@ -220,6 +227,14 @@
                     },
                     {
                         "ref": "obj-gen"
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dprout",
+                        "text": "according as, in proportion, accordingly, proportionately as, just as, as (L&S)."
+                    },
+                    {
+                        "word": "nec...videtur",
+                        "text": "“It is not so much an articulate sound, as a general cry of valour” (Church and Brodribb 1942)."
                     }
                 ]
             },

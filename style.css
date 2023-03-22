@@ -153,3 +153,7 @@ p, button {
 .copyright {
     font-size: 12px;
 }
+
+.highlighted {
+    background-color: var(--celadon)
+}

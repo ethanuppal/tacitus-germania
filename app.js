@@ -14,6 +14,27 @@ var referenceNotes = {};
 // https://stackoverflow.com/questions/22015684/zip-arrays-in-javascript
 var zip = (a, b) => a.map((k, i) => [k, b[i]]);
 
+// https://stackoverflow.com/questions/16308037/detect-when-elements-within-a-scrollable-div-are-out-of-view
+function checkInView(container, element, partial) {
+    //Get container properties
+    let cTop = container.scrollTop + container.offsetTop + element.clientHeight;
+    let cBottom = cTop + container.clientHeight;
+
+    //Get element properties
+    let eTop = element.offsetTop;
+    let eBottom = eTop + element.clientHeight;
+
+    //Check if in view
+    let isTotal = (eTop >= cTop && eBottom <= cBottom);
+    let isPartial = partial && (
+      (eTop < cTop && eBottom > cTop) ||
+      (eBottom > cBottom && eTop < cBottom)
+    );
+
+    //Return outcome
+    return  (isTotal || isPartial);
+}
+
 function main() {
     textContainerHeightDiv = document.getElementById('text-container-height');
     commentaryContainerDiv = document.getElementById('commentary-container');
@@ -30,6 +51,36 @@ function main() {
         commentaryContainerDiv.style.height = `${textContainerHeightDiv.offsetHeight}px`;
     }).observe(textContainerHeightDiv);
 
+    // Also horribly inefficient
+    // https://css-tricks.com/snippets/jquery/detect-first-visible-element/
+    // https://properprogramming.com/tools/jquery-to-javascript-converter/#Convert_jQuery_to_JavaScript_Online_Tool
+    commentaryContainerDiv.addEventListener("scroll", (event) => {
+        var first;
+        for (const note of document.getElementsByClassName('commentary-note')) {
+            if (checkInView(commentaryContainerDiv, note, true)) {
+                first = note;
+                break;
+            }
+        }
+        if (first) {
+            for (const section of document.getElementsByClassName('section')) {
+                if (section.dataset.sectionNumber == first.dataset.sectionNumber) {
+                    section.classList.add('highlighted');
+                } else {
+                    section.classList.remove('highlighted');
+                }
+            }
+            for (const noteSectNumber of document.getElementsByClassName('note-section-number')) {
+                if (noteSectNumber.dataset.sectionNumber == first.dataset.sectionNumber) {
+                    noteSectNumber.classList.add('highlighted');
+                } else {
+                    noteSectNumber.classList.remove('highlighted');
+                }
+            }
+        }
+    });
+
+    // Load the commentary
     fetchReferenceNotes({ then: () => {
         fetchCommentarySource();
     } })
@@ -102,8 +153,7 @@ function changeChapterIndexBy(delta) {
 }
 
 function loadTextAndCommentary() {
-    console.log(referenceNotes)
-    chapterTextP.textContent = '';
+    chapterTextP.innerHTML = '';
     commentaryDiv.innerHTML = '';
 
     const chapter = chapters[chapterIndex];
@@ -112,9 +162,9 @@ function loadTextAndCommentary() {
     for (const section of chapter.sections) {
         // Add section text
         if (sectionNumber > 1) {
-            chapterTextP.textContent += ' ';
+            chapterTextP.innerHTML += ' ';
         }
-        chapterTextP.textContent += `[${sectionNumber}] ${section.text.replaceAll('#', '')}`;
+        chapterTextP.innerHTML += `<span class="section${(sectionNumber == 1) ? (' highlighted') : ('')}" data-section-number="${sectionNumber}">[${sectionNumber}] ${section.text.replaceAll('#', '')}</span>`;
 
         // Add commentary notes
         if (section.notes != null) {
@@ -133,8 +183,10 @@ function loadTextAndCommentary() {
                 }
 
                 const noteP = document.createElement('p');
+                noteP.classList.add('commentary-note')
+                noteP.setAttribute('data-section-number', sectionNumber)
                 noteP.innerHTML += `<span style="font-weight: bold;">${noteWord}</span>`;
-                noteP.innerHTML += `[${sectionNumber}]: ${note.text}`;
+                noteP.innerHTML += `<span class="note-section-number${(sectionNumber == 1) ? (' highlighted') : ('')}" data-section-number="${sectionNumber}">[${sectionNumber}]</span>: ${note.text}`;
                 if (note.link != null) {
                     noteP.innerHTML += ` <a href=${note.link} target="_blank">(link)</a>`;
                 }
