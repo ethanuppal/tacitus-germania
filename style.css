@@ -16,6 +16,12 @@
     display: none;
 }
 
+/* https://stackoverflow.com/questions/15249300/html-is-not-touching-top-of-the-browser */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: var(--rich-black);
     font-family: sans-serif;
@@ -25,7 +31,7 @@ body {
     background-color: var(--tea-green);
     max-width: 1500px;
     margin: 0px auto;
-    border-radius: 15px;
+    border-radius: 0 0 15px 15px;
 }
 
 .safe-area {
@@ -110,6 +116,20 @@ body {
     }
 }
 
+/* Smaller computers */
+@media only screen and (max-width: 1500px) {
+    .container {
+        position: absolute;
+        left: 0;
+        up: 0;
+        right: 0;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+}
+
 #perseus-label {
     margin-top: 8px;
 }
@@ -128,4 +148,8 @@ h3 {
 }
 p, button {
     font-size: 20px;
+}
+
+.copyright {
+    font-size: 12px;
 }

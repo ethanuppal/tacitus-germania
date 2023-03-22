@@ -1,4 +1,4 @@
-# Copyright (C) 2022 Ethan Uppal All rights reserved.
+# Copyright (C) 2022 Ethan Uppal. All rights reserved.
 
 PY = python3
 PORT = 8000

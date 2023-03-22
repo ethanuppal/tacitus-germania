@@ -2,7 +2,7 @@
     {
     	"sections": [
             {
-    			"text": "#Germania omnis# a #Gallis# #Raetis#que et #Pannoniis# #Rheno et Danubio fluminibus#, a #Sarmatis# #Dacis#que mutuo metu aut montibus separatur: cetera Oceanus #ambit#, latos sinus et insularum immensa spatia complectens, nuper cognitis quibusdam gentibus ac regibus, quos bellum aperuit.",
+    			"text": "#Germania omnis# a #Gallis# #Raetis#que et #Pannoniis# #Rheno et Danubio fluminibus#, a #Sarmatis# #Dacis#que mutuo metu aut montibus separatur: cetera Oceanus #ambit#, latos sinus et insularum immensa spatia #complectens#, #nuper cognitis quibusdam gentibus ac regibus#, quos bellum aperuit.",
                 "notes": [
                     {
                         "text": "Note the similarity to how Caesar starts B.G. (“Gallia est omnis divisa”); Tacitus writes “Germania omnis...separatur”"
@@ -33,7 +33,15 @@
                         "text": "the Dacians, a famous warlike people, akin to the Thracians. They occupied what is now Upper Hungary, Transylvania, Moldavia, Wallachia, Bessarabia. Subdued by Trajan, they received Roman civilization, and thence retain in part the name Rumanians (L&S)."
                     },
                     {
-                        "text": "whence English “ambient”."
+                        "text": "surrounds."
+                    },
+                    {
+                        "text": "with Oceanus."
+                    },
+                    {
+                        "word": "nuper...regibus",
+                        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-absolute",
+                        "text": "ablative absolute."
                     }
                 ]
     		},
@@ -93,7 +101,7 @@
                         "text": "to be carried, to ride, to come to a place upon a horse, in a carriage, ship, etc (L&S)."
                     },
                     {
-                        "text": "emigrate, not immigrate."
+                        "text": "to emigrate (Church and Brodribb 1942); lit. to change one's home."
                     },
                     {
                         "text": "Tacitus's remark."
@@ -115,8 +123,7 @@
                         "text": "rhetorical question."
                     },
                     {
-                        "link": "https://dcc.dickinson.edu/grammar/latin/genitive",
-                        "text": "objective genitive (A&G 347)."
+                        "ref": "obj-gen"
                     },
                     {
                         "link": "https://dcc.dickinson.edu/grammar/latin/ablative-absolute",
@@ -125,7 +132,7 @@
                     {
                         "word": "terris, caelo, cultu, aspectu",
                         "link": "https://dcc.dickinson.edu/grammar/latin/ablative-specification",
-                        "text": "ablative of respect."
+                        "text": "ablative of respect with corresponding adjectives."
                     },
                     {
                         "text": "eius (qui petit)"
@@ -144,7 +151,7 @@
                         "text": "a record of events, chronicles, annals (L&S)."
                     },
                     {
-                        "text": "object of celebrant."
+                        "text": "object of celebrant, or subject of indirect speech introduced by celebrant."
                     },
                     {
                         "link": "https://dcc.dickinson.edu/grammar/latin/ablative-separation",
@@ -153,7 +160,7 @@
                     {
                         "word": "Tuistonem, Mannum",
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry=germania-geo&highlight=tuisco",
-                        "text": "The ancients, however, are agreed in stating that the Germans worshipped several divinities, among whom they mention the sun, the moon, the stars, Tuisco the ancestor of their whole race, and his son Mannus (Smith, 1845)."
+                        "text": "The ancients, however, are agreed in stating that the Germans worshipped several divinities, among whom they mention the sun, the moon, the stars, Tuisco [sic] the ancestor of their whole race, and his son Mannus (Smith 1845). The best manuscripts have the spelling with ‘t’ and not ‘c’ (Stuart 1875)."
                     }
                 ]
             },
@@ -164,7 +171,7 @@
                         "text": "subject of adfirmant."
                     },
                     {
-                        "text": "“the freedom of conjecture permitted by antiquity” (Church and Brodribb)."
+                        "text": "“the freedom of conjecture permitted by antiquity” (Church and Brodribb 1942), cf. Livy's praefatio."
                     },
                     {
                         "text": "(esse)."
@@ -181,14 +188,14 @@
                 "text": "#ceterum# Germaniae vocabulum recens et nuper additum, quoniam qui primi Rhenum transgressi Gallos expulerint ac nunc #Tungri#, #tunc Germani vocati sint#: ita nationis nomen, non gentis, evaluisse paulatim, #ut# omnes primum a victore ob metum, mox et a se ipsis invento nomine Germani vocarentur.",
                 "notes": [
                     {
-                        "text": "“on the other hand” (Church and Brodribb)."
+                        "text": "“on the other hand” (Church and Brodribb 1942)."
                     },
                     {
                         "text": "gives a name to the qui earlier in the phrase."
                     },
                     {
                         "word": "qui...sint",
-                        "text": "“the tribes which first crossed the Rhine and drove out the Gauls, and are now called Tungrians, were then called Germans” (Church and Brodribb)."
+                        "text": "“the tribes which first crossed the Rhine and drove out the Gauls, and are now called Tungrians, were then called Germans” (Church and Brodribb 1942)."
                     },
                     {
                         "link": "https://dcc.dickinson.edu/grammar/latin/result-clauses",
@@ -201,14 +208,21 @@
     {
         "sections": [
             {
-                "text": "Fuisse et apud eos Herculem memorant, primumque omnium virorum fortium ituri in proelia canunt. sunt #illis# haec quoque carmina quorum relatu, quem #baritum# vocant, accendunt animos #futuraeque pugnae# fortunam ipso cantu augurantur; #terrent# enim trepidantve, prout sonuit acies, nec tam vocis ille quam virtutis concentus videtur.",
-            "notes": [
-{ "text": "dative of posesssion or reference?" },
-{ "text": "German war cry" },
-{ "text": "objective genitive" },
-{ "text": "zero idea what this means through the rest of the sentence" }
-]
-},
+                "text": "Fuisse et apud eos Herculem memorant, primumque omnium virorum fortium ituri in proelia canunt. sunt #illis# haec quoque carmina quorum relatu, quem #baritum# vocant, accendunt animos #futuraeque pugnae# fortunam ipso cantu augurantur; terrent enim trepidantve, prout sonuit acies, nec tam vocis ille quam virtutis concentus videtur.",
+                "notes": [
+                    {
+                        "link": "https://dcc.dickinson.edu/grammar/latin/dative-possession",
+                        "text": "dative of posesssion."
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dbaritus",
+                        "text": "the war-cry of the Germans (L&S)."
+                    },
+                    {
+                        "ref": "obj-gen"
+                    }
+                ]
+            },
             {
                 "text": "adfectatur praecipue asperitas soni et fractum murmur, obiectis ad os scutis, quo plenior et gravior vox repercussu"
             },

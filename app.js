@@ -9,6 +9,7 @@ var chapterNumberSpan;
 var commentaryHeightMatcher;
 var perseusFrame, perseusInput;
 var regex = "\\#(.*?)\\#";
+var referenceNotes = {};
 
 // https://stackoverflow.com/questions/22015684/zip-arrays-in-javascript
 var zip = (a, b) => a.map((k, i) => [k, b[i]]);
@@ -24,6 +25,26 @@ function main() {
     perseusFrame = document.getElementById('perseus-frame');
     perseusInput = document.getElementById('perseus-input');
 
+    // Horribly inefficient but it works.
+    commentaryHeightMatcher = new ResizeObserver(() => {
+        commentaryContainerDiv.style.height = `${textContainerHeightDiv.offsetHeight}px`;
+    }).observe(textContainerHeightDiv);
+
+    fetchReferenceNotes({ then: () => {
+        fetchCommentarySource();
+    } })
+}
+
+function fetchReferenceNotes(thenObj) {
+    fetch('reference.json')
+        .then(response => response.text())
+        .then(data => {
+            referenceNotes = JSON.parse(data);
+            thenObj.then();
+    });
+}
+
+function fetchCommentarySource() {
     fetch('commentary.json')
         .then(response => response.text())
         .then(data => {
@@ -38,11 +59,6 @@ function main() {
             setNavigationEnabled();
             loadTextAndCommentary();
     });
-
-    // Horribly inefficient but it works.
-    commentaryHeightMatcher = new ResizeObserver(() => {
-        commentaryContainerDiv.style.height = `${textContainerHeightDiv.offsetHeight}px`;
-    }).observe(textContainerHeightDiv);
 }
 
 function setButtonEnabled(button, isEnabled) {
@@ -86,6 +102,7 @@ function changeChapterIndexBy(delta) {
 }
 
 function loadTextAndCommentary() {
+    console.log(referenceNotes)
     chapterTextP.textContent = '';
     commentaryDiv.innerHTML = '';
 
@@ -104,8 +121,16 @@ function loadTextAndCommentary() {
             foundNotes = true;
             const noteWords = [...section.text.matchAll(regex)];
             for (const package of zip(noteWords, section.notes)) {
-                const note = package[1];
+                var note = package[1];
                 const noteWord = note.word ?? package[0][1];
+
+                // Check if it's a reference note
+                if ('ref' in note) {
+                    note = referenceNotes[note.ref];
+                    if (note == undefined) {
+                        continue;
+                    }
+                }
 
                 const noteP = document.createElement('p');
                 noteP.innerHTML += `<span style="font-weight: bold;">${noteWord}</span>`;
