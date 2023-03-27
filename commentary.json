@@ -104,7 +104,7 @@
                         "text": "to be carried, to ride, to come to a place upon a horse, in a carriage, ship, etc (L&S)."
                     },
                     {
-                        "text": "to emigrate (Church and Brodribb 1942); lit. to change one's home."
+                        "text": "“to emigrate” (Church and Brodribb 1942); lit. to change one's home."
                     },
                     {
                         "text": "Tacitus's remark."
@@ -180,7 +180,7 @@
                         "ref": "ind-sp"
                     },
                     {
-                        "text": "(ortos esse)."
+                        "text": "[ortos esse]."
                     },
                     {
                         "ref": "ind-sp"
@@ -239,13 +239,53 @@
                 ]
             },
             {
-                "text": "adfectatur praecipue asperitas soni et fractum murmur, obiectis ad os scutis, quo plenior et gravior vox repercussu"
+                "text": "adfectatur praecipue asperitas soni et fractum murmur, #obiectis ad os scutis#, #quo# plenior et gravior vox #repercussu#",
+                "notes": [
+                    {
+                        "ref": "abl-abs"
+                    },
+                    {
+                        "link": "https://archive.org/details/germaniaagricola00taciiala/page/142/mode/2up",
+                        "text": "<i>that</i> (in order that), takes the place of <i>ut</i>, especially with a comparative (Stuart 1875)."
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Drepercussus2",
+                        "text": "a rebounding, reverberation, repercussion, of light, sound, wind, etc.; reflection, echo, counter-pressure (L&S)."
+                    }
+                ]
             },
             {
-                "text": "intumescat. ceterum et Ulixen quidam opinantur longo illo et fabuloso errore in hunc Oceanum delatum adisse Germaniae terras, Asciburgiumque, quod in ripa Rheni situm hodieque incolitur, ab illo constitutum nominatumque; aram quin etiam Ulixi consecratam, adiecto Laertae patris nomine, eodem loco olim repertam, monumentaque et tumulos quosdam Graecis litteris inscriptos in"
+                "text": "intumescat. ceterum et Ulixen #quidam# opinantur longo illo et fabuloso #errore# in hunc Oceanum delatum adisse Germaniae terras, #Asciburgium#que, quod in ripa Rheni situm #hodieque# incolitur, #ab illo constitutum nominatumque#; aram quin etiam Ulixi consecratam, #adiecto# Laertae patris nomine, eodem loco olim repertam, monumentaque et tumulos quosdam Graecis litteris inscriptos in",
+                "notes": [
+                    {
+                        "text": "subject of opinantur."
+                    },
+                    {
+                        "text": "“wanderings” (Church and Brodribb 1942); perhaps ablative of means with delatum."
+                    },
+                    {
+                        "link": "https://pleiades.stoa.org/places/108761",
+                        "text": "An auxiliary outpost in Germania Inferior where the Ala Primae Tungrorum was based until the site was destroyed by the Batavi ca. AD 70 (Pleiades)."
+                    },
+                    {
+                        "text": "“to this day” (Church and Brodribb 1942)."
+                    },
+                    {
+                        "text": "founded by and named after him."
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=adjicio&fromdoc=Perseus%3Atext%3A1999.04.0059",
+                        "text": "to put or place at or near (L&S)."
+                    }
+                ]
             },
             {
-                "text": "confinio Germaniae Raetiaeque adhuc extare. quae neque confirmare argumentis neque refellere in animo est: ex ingenio suo quisque demat vel addat fidem."
+                "text": "confinio Germaniae Raetiaeque adhuc extare. quae neque confirmare argumentis neque refellere #in animo est#: ex ingenio suo quisque demat vel addat fidem.",
+                "notes": [
+                    {
+                        "text": "a standard formula for expression intention."
+                    }
+                ]
             }
         ]
     },

@@ -19,12 +19,16 @@
         "link": "https://dcc.dickinson.edu/grammar/latin/ablative-agent",
         "text": "ablative of agent."
     },
+    "abl-cmp": {
+        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-comparison",
+        "text": "ablative of comparison."
+    },
     "dat-pos": {
         "link": "https://dcc.dickinson.edu/grammar/latin/dative-possession",
         "text": "dative of posesssion."
     },
     "ind-sp": {
-        "text": "(esse)."
+        "text": "[esse]."
     },
     "res-cls": {
         "link": "https://dcc.dickinson.edu/grammar/latin/result-clauses",
