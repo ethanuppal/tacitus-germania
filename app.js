@@ -8,8 +8,11 @@ var previousButton, nextButton;
 var chapterNumberSpan;
 var commentaryHeightMatcher;
 var perseusFrame, perseusInput;
-var regex = "\\#(.*?)\\#";
+var noteRegex = "\\#(.*?)\\#";
+var linkRegex = /\@(.*?)\@/;
+
 var referenceNotes = {};
+var searchParams;
 
 // https://stackoverflow.com/questions/22015684/zip-arrays-in-javascript
 var zip = (a, b) => a.map((k, i) => [k, b[i]]);
@@ -45,6 +48,7 @@ function main() {
     chapterNumberSpan = document.getElementById('chapter-number');
     perseusFrame = document.getElementById('perseus-frame');
     perseusInput = document.getElementById('perseus-input');
+    searchParams = new URLSearchParams(window.location.search);
 
     // Horribly inefficient but it works.
     commentaryHeightMatcher = new ResizeObserver(() => {
@@ -86,6 +90,15 @@ function main() {
     } })
 }
 
+function setChapterFromURL() {
+    if (searchParams.has('chapter')) {
+        chapterIndex = (parseInt(searchParams.get('chapter'), 10) - 1) || 0;
+        if (chapterIndex + 1 > chapters.count) {
+            chapterIndex = 0;
+        }
+    }
+}
+
 function fetchReferenceNotes(thenObj) {
     fetch('reference.json')
         .then(response => response.text())
@@ -104,6 +117,8 @@ function fetchCommentarySource() {
             const chapterIndexTry = localStorage.getItem('chapter_index');
             if (chapterIndexTry != null) {
                 chapterIndex = Number(chapterIndexTry);
+            } else {
+                setChapterFromURL();
             }
             chapterNumberSpan.textContent = `${chapterIndex + 1}`;
 
@@ -169,27 +184,44 @@ function loadTextAndCommentary() {
         // Add commentary notes
         if (section.notes != null) {
             foundNotes = true;
-            const noteWords = [...section.text.matchAll(regex)];
+            const noteWords = [...section.text.matchAll(noteRegex)];
             for (const package of zip(noteWords, section.notes)) {
                 var note = package[1];
                 const noteWord = note.word ?? package[0][1];
 
                 // Check if it's a reference note
+                var toAdd = '';
                 if ('ref' in note) {
+                    if ('text' in note) {
+                        toAdd = ` ${note.text}`;
+                    }
                     note = referenceNotes[note.ref];
                     if (note == undefined) {
                         continue;
                     }
                 }
 
+                if (!('insertedLink' in note)) {
+                    note.insertedLink = false;
+                }
+
                 const noteP = document.createElement('p');
                 noteP.classList.add('commentary-note')
                 noteP.setAttribute('data-section-number', sectionNumber)
                 noteP.innerHTML += `<span style="font-weight: bold;">${noteWord}</span>`;
-                noteP.innerHTML += `<span class="note-section-number${(sectionNumber == 1) ? (' highlighted') : ('')}" data-section-number="${sectionNumber}">[${sectionNumber}]</span>: ${note.text}`;
-                if (note.link != null) {
+
+                console.log(note.text.includes('@'));
+                if (note.link != null && note.text.includes('@')) {
+                    const linkPart = linkRegex.exec(note.text)[0];
+                    note.text = note.text.replace(linkRegex, `<a href="${note.link}" target="_blank">${linkPart.slice(1, -1)}</a>`);
+                    console.log('', linkPart.slice(1, -1))
+                    note.insertedLink = true;
+                }
+                noteP.innerHTML += `<span class="note-section-number${(sectionNumber == 1) ? (' highlighted') : ('')}" data-section-number="${sectionNumber}">[${sectionNumber}]</span>: ${note.text + toAdd}`;
+                if (!note.insertedLink && note.link != null) {
                     noteP.innerHTML += ` <a href=${note.link} target="_blank">(link)</a>`;
                 }
+
                 commentaryDiv.append(noteP);
             }
         }
