@@ -210,7 +210,7 @@
     {
         "sections": [
             {
-                "text": "Fuisse #et# apud eos Herculem memorant, primumque omnium virorum fortium #ituri# in proelia canunt. sunt #illis# haec quoque carmina quorum relatu, quem #baritum# vocant, accendunt animos #futuraeque pugnae# fortunam ipso cantu augurantur; terrent enim trepidantve, #prout# sonuit acies, #nec tam vocis ille quam virtutis concentus videtur#.",
+                "text": "Fuisse #et# apud eos Herculem memorant, primumque omnium virorum fortium #ituri# in proelia canunt. sunt #illis# haec quoque carmina quorum relatu, quem #baritum# vocant, accendunt animos #futuraeque pugnae# fortunam ipso cantu #augurantur#; terrent enim trepidantve, #prout# sonuit acies, #nec tam vocis ille quam virtutis concentus videtur#.",
                 "notes": [
                     {
                         "text": "also, too."
@@ -229,12 +229,15 @@
                         "ref": "obj-gen"
                     },
                     {
+                        "text": "deponent."
+                    },
+                    {
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dprout",
                         "text": "according as, in proportion, accordingly, proportionately as, just as, as (@L&S@)."
                     },
                     {
                         "word": "nec...videtur",
-                        "text": "“It is not so much an articulate sound, as a general cry of valour” (Church and Brodribb 1942)."
+                        "text": "“It is not so much an articulate sound, as a general cry of valour” (Church and Brodribb 1942). <b>tam...quam</b>: correlatives."
                     }
                 ]
             },
@@ -325,7 +328,7 @@
                     },
                     {
                         "link": "https://archive.org/details/germaniaagricola00taciiala/page/142/mode/2up",
-                        "text": "litote; “by no intermarriages” (@Stuart 1875@)"
+                        "text": "the negation is put into the noun; “by no intermarriages” (@Stuart 1875@)"
                     },
                     {
                         "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dinficio",
@@ -364,7 +367,7 @@
                 "notes": [
                     {
                         "ref": "gap-est",
-                        "text": "iis is also gapped as a dative of possesion."
+                        "text": "iis is also gapped as a dative of possession."
                     },
                     {
                         "text": "thirst and heat."
