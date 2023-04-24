@@ -27,6 +27,10 @@
         "link": "https://dcc.dickinson.edu/grammar/latin/ablative-cause",
         "text": "ablative of cause (@A&G@)."
     },
+    "abl-deg": {
+        "link": "https://dcc.dickinson.edu/grammar/latin/ablative-degree-difference",
+        "text": "ablative of degree of difference (@A&G@)."
+    },
     "dat-pos": {
         "link": "https://dcc.dickinson.edu/grammar/latin/dative-possession",
         "text": "dative of posesssion (@A&G@)."
@@ -48,5 +52,9 @@
     "hist-inf": {
         "link": "https://dcc.dickinson.edu/grammar/latin/other-uses-infinitive",
         "text": "historical infinitve (@A&G 463@)."
+    },
+    "ind-que": {
+        "link": "https://dcc.dickinson.edu/grammar/latin/indirect-questions",
+        "text": "indirect question (@A&G 573@)."
     }
 }

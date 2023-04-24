@@ -5,7 +5,7 @@ var chapterIndex = 0;
 var textContainerHeightDiv, commentaryContainerDiv;
 var chapterTextP, commentaryDiv;
 var previousButton, nextButton;
-var chapterNumberSpan;
+var chapterNumberSpan, chapterNameSpan;
 var commentaryHeightMatcher;
 var perseusFrame, perseusInput;
 var noteRegex = "\\#(.*?)\\#";
@@ -46,6 +46,7 @@ function main() {
     previousButton = document.getElementById('previous-chapter');
     nextButton = document.getElementById('next-chapter');
     chapterNumberSpan = document.getElementById('chapter-number');
+    chapterNameSpan = document.getElementById('chapter-name')
     perseusFrame = document.getElementById('perseus-frame');
     perseusInput = document.getElementById('perseus-input');
     searchParams = new URLSearchParams(window.location.search);
@@ -172,6 +173,11 @@ function loadTextAndCommentary() {
     commentaryDiv.innerHTML = '';
 
     const chapter = chapters[chapterIndex];
+    if ('name' in chapter) {
+        chapterNameSpan.textContent = `: ${chapter.name}`;
+    } else {
+        chapterNameSpan.textContent = '';
+    }
     var sectionNumber = 1;
     var foundNotes = false;
     for (const section of chapter.sections) {
@@ -210,11 +216,9 @@ function loadTextAndCommentary() {
                 noteP.setAttribute('data-section-number', sectionNumber)
                 noteP.innerHTML += `<span style="font-weight: bold;">${noteWord}</span>`;
 
-                console.log(note.text.includes('@'));
                 if (note.link != null && note.text.includes('@')) {
                     const linkPart = linkRegex.exec(note.text)[0];
                     note.text = note.text.replace(linkRegex, `<a href="${note.link}" target="_blank">${linkPart.slice(1, -1)}</a>`);
-                    console.log('', linkPart.slice(1, -1))
                     note.insertedLink = true;
                 }
                 noteP.innerHTML += `<span class="note-section-number${(sectionNumber == 1) ? (' highlighted') : ('')}" data-section-number="${sectionNumber}">[${sectionNumber}]</span>: ${note.text + toAdd}`;
