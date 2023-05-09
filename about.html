@@ -1,0 +1,54 @@
+<!-- Copyright (C) 2023 Ethan Uppal. All rights reserved. -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://ethanuppal.github.io/cdn/lib/syntax.css">
+        <script src="https://ethanuppal.github.io/cdn/lib/syntax.js"></script>
+        <script src="https://ethanuppal.github.io/cdn/lib/autosyntax.js"></script>
+        <title>Taciti de Germania Liber</title>
+    </head>
+    <body onload="main();">
+        <div class="container">
+            <div class="safe-area">
+                <div class="stack-vertical">
+                    <div id="content">
+                        <div class="stack-vertical">
+                            <div class="centerer">
+                                <h1 id="title">Taciti de Germania Liber et Commentarii</h1>
+                            </div>
+                            <div class="centerer">
+                                <p>Commentary created by Ethan Uppal. <a href="index.html">Back home</a></p>
+                            </div>
+                            <div style="margin: auto; max-width: 700px; padding: 8px; border-style: solid;">
+                                <p>This commentary is a project that I did for my Latin 5 class. I programmed the website from scratch, and all the source code can be found <a href="https://github.com/ethanuppal/tacitus-germania" rel="nofollow">on GitHub</a>.</p>
+                                <p>You can use the framework that I developed to easily create your own commentaries. The format should be easily deducible from the <a href="commentary.json" rel="nofollow"><code>commentary.json</code></a> file, and all of the code is contained in <a href="app.js" rel="nofollow"><code>app.js</code></a>.</p>
+                                <pre class="code code-json">{
+    "text": "#permutatione mercium# utuntur. pecuniam probant veterem et diu notam, #serratos bigatosque#. argentum quoque magis quam aurum sequuntur, nulla #adfectione# animi, sed quia numerus argenteorum facilior usui est #promisca ac vilia# mercantibus.",
+    "notes": [
+        {
+            "text": "bartering."
+        },
+        {
+            "text": "“milled or showing a two-horse chariot” (Church and Brodribb 1942)."
+        },
+        {
+            "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Daffectio",
+            "text": "The relation to or disposition toward a thing produced in a person by some influence (@L&S@)."
+        },
+        {
+            "text": "objects of mercantibus."
+        }
+    ]
+}</pre>
+                                <p>You can also specify reference notes (as in <a href="reference.json"><code>reference.josn</code></a>) for common observations such as those of grammar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

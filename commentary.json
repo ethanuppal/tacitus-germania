@@ -229,11 +229,10 @@
                         "ref": "obj-gen"
                     },
                     {
-                        "text": "deponent."
+                        "ref": "dep"
                     },
                     {
-                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dprout",
-                        "text": "according as, in proportion, accordingly, proportionately as, just as, as (@L&S@)."
+                        "ref": "^prout"
                     },
                     {
                         "word": "nec...videtur",
@@ -488,21 +487,125 @@
         ]
     },
     {
+        "name": "Ethnology, Climate, Resources",
         "sections": [
             {
-                "text": "Ne ferrum quidem superest, sicut ex genere telorum colligitur. rari gladiis aut maioribus lanceis utuntur: hastas vel ipsorum vocabulo frameas gerunt angusto et brevi ferro, sed ita acri et ad usum habili, ut eodem telo, prout ratio"
+                "text": "#Ne ferrum quidem superest#, sicut ex genere telorum #colligitur#. rari gladiis aut maioribus lanceis utuntur: hastas vel ipsorum vocabulo frameas gerunt #angusto et brevi ferro#, sed #ita# acri et ad usum habili, ut eodem telo, #prout# ratio",
+                "notes": [
+                    {
+                        "link": "https://ethanuppal.github.io/tacitus-germania?chapter=5",
+                        "text": "not even (see @Ch 5@.2)."
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dcolligo1",
+                        "text": "To put together mentally, etc., i. e. to gather, conclude, deduce, infer from what precedes...[w]ith <i>ex</i> (@L&S@)."
+                    },
+                    {
+                        "ref": "abl-qua"
+                    },
+                    {
+                        "word": "ita...ut",
+                        "ref": "res-cls"
+                    },
+                    {
+                        "ref": "^prout"
+                    }
+                ]
             },
             {
-                "text": "poscit, vel comminus vel eminus pugnent. et eques quidem scuto frameaque contentus est, pedites et missilia spargunt, pluraque singuli, atque in immensum vibrant, nudi aut sagulo leves. nulla cultus iactatio: scuta tantum lectissimis"
+                "text": "poscit, vel #comminus vel eminus# pugnent. et eques quidem scuto frameaque contentus est, pedites et missilia spargunt, #pluraque singuli#, atque in immensum vibrant, nudi aut #sagulo# leves. nulla cultus #iactatio#: scuta tantum lectissimis",
+                "notes": [
+                    {
+                        "text": "the same blade is fit for different forms of combat."
+                    },
+                    {
+                        "text": "“each...many”."
+                    },
+                    {
+                        "ref": "abl-res"
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Djactatio",
+                        "text": "A boasting, bragging; ostentation, display, vanity (@L&S@), cf. <i>illa se iactet in aula Aeolus</i> in Aen. 1.140-1."
+                    }
+                ]
             },
             {
-                "text": "coloribus distinguunt. paucis loricae, vix uni alterive cassis aut galea. equi non forma, non velocitate conspicui. sed nec variare gyros in morem nostrum docentur: in rectum aut uno flexu dextros agunt, ita coniuncto orbe ut nemo"
+                "text": "coloribus distinguunt. paucis #loricae#, vix uni alterive cassis aut galea. equi non #forma#, non velocitate #conspicui#. sed nec variare #gyros# #in morem nostrum# docentur: in rectum aut uno flexu dextros agunt, #ita# #coniuncto orbe# ut nemo",
+                "notes": [
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dlorica",
+                        "text": "a leather cuirass, a corselet of thongs (opp. thorax, a brazen breastplate) (@L&S@)."
+                    },
+                    {
+                        "word": "forma, velocitate",
+                        "ref": "abl-res"
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dconspicuus",
+                        "text": "“stand out”; that attracts the attention to itself, striking, conspicuous, distinguished, illustrious, remarkable (@L&S@)"
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dgyrus",
+                        "text": "“nec equi variare gyros in morem nostrum docentur,” Tac. G. 6; so of a circular course, ring, for horses (@L&S@)."
+                    },
+                    {
+                        "text": "“after our fashion” (Church and Brodribb 1942)."
+                    },
+                    {
+                        "word": "ita...ut",
+                        "ref": "res-cls"
+                    },
+                    {
+                        "link": "https://archive.org/details/germaniaagricola00taciiala/page/144/mode/2up",
+                        "text": "<i>a circular course so connected</i> (Stuart 1875)."
+                    }
+                ]
             },
             {
-                "text": "posterior sit. in universum aestimanti plus penes peditem roboris; eoque mixti proeliantur, apta et congruente ad equestrem pugnam velocitate peditum, quos ex omni iuventute delectos ante aciem locant. [5] definitur et numerus: centeni ex singulis pagis sunt, idque ipsum inter suos vocantur, et quod primo numerus fuit, iam nomen et honor"
+                "text": "posterior sit. #in universum# #aestimanti# plus penes peditem roboris; eoque #mixti# #proeliantur#, apta et congruente ad equestrem pugnam velocitate peditum, quos ex omni iuventute delectos #ante aciem# locant.",
+                "notes": [
+                    {
+                        "text": "“on the whole” (Church and Brodribb 1942)."
+                    },
+                    {
+                        "word": "in...roboris",
+                        "ref": "ind-sp",
+                        "text": "Supply an impersonal head verb."
+                    },
+                    {
+                        "text": "i.e., with the cavalry."
+                    },
+                    {
+                        "ref": "dep",
+                        "text": "The subjects are the cavalry."
+                    },
+                    {
+                        "text": "“in front of the line” (Church and Brodribb 1942)."
+                    }
+                ]
+            },
+            {
+                "text": "definitur et numerus: centeni ex singulis pagis sunt, idque ipsum inter suos vocantur, et quod primo numerus fuit, iam nomen et honor"
             },
             {
                 "text": "est. acies per cuneos componitur. cedere loco, dummodo rursus instes, consilii quam formidinis arbitrantur. corpora suorum etiam in dubiis proeliis referunt. scutum reliquisse praecipuum flagitium, nec aut sacris adesse aut concilium inire ignominioso fas, multique superstites bellorum infamiam laqueo finierunt."
+            }
+        ]
+    },
+    {
+        "sections": [
+            {
+                "text": "Reges ex nobilitate, duces ex virtute sumunt. nec regibus infinita ac libera potestas, et duces exemplo potius quam imperio, si prompti, si conspicui, si ante aciem agant,"
+            },
+            {
+                "text": "admiratione praesunt. ceterum neque animadvertere neque vincire, ne verberare quidem nisi sacerdotibus permissum, non quasi in poenam nec ducis iussu, sed velut deo imperante, quem adesse bellantibus credunt."
+            },
+            {
+                "text": "effigiesque et signa quaedam detracta lucis in proelium ferunt; quodque praecipuum fortitudinis incitamentum est, non casus nec fortuita conglobatio turmam aut cuneum facit, sed familiae et propinquitates; et in proximo pignora, unde feminarum"
+            },
+            {
+                "text": "ululatus audiri, unde vagitus infantium. hi cuique sanctissimi testes, hi maximi laudatores: ad matres, ad coniuges vulnera ferunt; nec illae numerare et exigere plagas pavent, cibosque et hortamina pugnantibus gestant."
             }
         ]
     }

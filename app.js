@@ -118,9 +118,8 @@ function fetchCommentarySource() {
             const chapterIndexTry = localStorage.getItem('chapter_index');
             if (chapterIndexTry != null) {
                 chapterIndex = Number(chapterIndexTry);
-            } else {
-                setChapterFromURL();
             }
+            setChapterFromURL();
             chapterNumberSpan.textContent = `${chapterIndex + 1}`;
 
             setNavigationEnabled();
