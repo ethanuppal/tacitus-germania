@@ -43,8 +43,12 @@
         "link": "https://dcc.dickinson.edu/grammar/latin/dative-possession",
         "text": "dative of posesssion (@A&G@)."
     },
+    "dat-ref": {
+        "link": "https://dcc.dickinson.edu/grammar/latin/dative-reference",
+        "text": "dative of reference (@A&G 376@)."
+    },
     "ind-sp": {
-        "text": "[esse]."
+        "text": "[esse] in indirect speech."
     },
     "res-cls": {
         "link": "https://dcc.dickinson.edu/grammar/latin/result-clauses",
@@ -55,7 +59,13 @@
         "text": "linking relative pronoun (@A&G 308.f@)."
     },
     "gap-est": {
-        "text": "[est]."
+        "text": "sc. <i>est</i>."
+    },
+    "gap-sunt": {
+        "text": "sc. <i>sunt</i>."
+    },
+    "gap-esse": {
+        "text": "sc. <i>esse</i>."
     },
     "hist-inf": {
         "link": "https://dcc.dickinson.edu/grammar/latin/other-uses-infinitive",

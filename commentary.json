@@ -558,7 +558,7 @@
                     },
                     {
                         "link": "https://archive.org/details/germaniaagricola00taciiala/page/144/mode/2up",
-                        "text": "<i>a circular course so connected</i> (Stuart 1875)."
+                        "text": "<i>a circular course so connected</i> (@Stuart 1875@)."
                     }
                 ]
             },
@@ -586,23 +586,107 @@
                 ]
             },
             {
-                "text": "definitur et numerus: centeni ex singulis pagis sunt, idque ipsum inter suos vocantur, et quod primo numerus fuit, iam nomen et honor"
+                "text": "definitur et numerus: centeni ex singulis pagis sunt, idque ipsum inter suos #vocantur#, et #quod primo numerus fuit#, iam nomen et honor",
+                "notes": [
+                    {
+                        "text": "“take their name” (Church and Brodribb 1942)."
+                    },
+                    {
+                        "text": "sc. modo"
+                    }
+                ]
             },
             {
-                "text": "est. acies per cuneos componitur. cedere loco, dummodo rursus instes, consilii quam formidinis arbitrantur. corpora suorum etiam in dubiis proeliis referunt. scutum reliquisse praecipuum flagitium, nec aut sacris adesse aut concilium inire ignominioso fas, multique superstites bellorum infamiam laqueo finierunt."
+                "text": "est. acies per #cuneos# componitur. cedere loco, #dummodo# rursus #instes#, #consilii quam formidinis arbitrantur#. #corpora# suorum etiam in dubiis proeliis referunt. scutum reliquisse praecipuum flagitium, nec aut sacris adesse aut concilium inire #ignominioso# fas, multique #superstites# #bellorum# infamiam laqueo finierunt.",
+                "notes": [
+                    {
+                        "link": "https://yalebooks.yale.edu/book/9780300119794/soldiers-and-ghosts/",
+                        "text": "The wedge is better than the square, the ancient tacticians say, because it offers a point for penetrating enemy formations and gathers the leaders in a group at the front. It is easier to turn than a square because all follow the commander at the apex, “like a flight of cranes.” (@Lendon 2005@, p98)"
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Ddum",
+                        "text": "In conditional relations as a restrictive particle, like quatenus and duntaxat, so long as, if so be that, provided that, if only (so regularly connected with the subjunctive) (@L&S@)."
+                    },
+                    {
+                        "text": "Tacitus begins to use the second person subjunctive rather liberally."
+                    },
+                    {
+                        "ref": "gap-esse"
+                    },
+                    {
+                        "text": "sc. <i>mortua</i>"
+                    },
+                    {
+                        "ref": "dat-pos"
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dsuperstito",
+                        "text": "<i>to be over or remaining</i> (@L&S@); here used as a noun, in the sense of having escaped from battle (Church and Brodribb 1942)."
+                    },
+                    {
+                        "ref": "obj-gen"
+                    }
+                ]
             }
         ]
     },
     {
+        "name": "Ethnology, Climate, Resources",
         "sections": [
             {
-                "text": "Reges ex nobilitate, duces ex virtute sumunt. nec regibus infinita ac libera potestas, et duces exemplo potius quam imperio, si prompti, si conspicui, si ante aciem agant,"
+                "text": "Reges #ex# nobilitate, duces ex virtute sumunt. nec #regibus# infinita ac libera #potestas#, et duces exemplo #potius# quam imperio, si #prompti#, si conspicui, si ante aciem agant,",
+                "notes": [
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dex",
+                        "text": "To indicate the cause or reason of any thing (@L&S@)."
+                    },
+                    {
+                        "ref": "dat-pos"
+                    },
+                    {
+                        "ref": "gap-est"
+                    },
+                    {
+                        "text": "here carrying more the sense of <i>magis</i>."
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=promo&fromdoc=Perseus%3Atext%3A1999.04.0059",
+                        "text": "brave, courageous (@L&S@)."
+                    }
+                ]
             },
             {
-                "text": "admiratione praesunt. ceterum neque animadvertere neque vincire, ne verberare quidem nisi sacerdotibus permissum, non quasi in poenam nec ducis iussu, sed velut deo imperante, quem adesse bellantibus credunt."
+                "text": "admiratione praesunt. ceterum #neque# animadvertere neque vincire, ne verberare quidem nisi #sacerdotibus# permissum, non quasi #in poenam# nec ducis iussu, sed velut deo imperante, quem adesse bellantibus credunt.",
+                "notes": [
+                    {
+                        "word": "neque...permissum",
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Danimadverto",
+                        "text": "“neque animadvertere neque vincire nisi sacerdotibus permissum = morte multare,” to punish with death, Tac. G. 7. (@L&S@)."
+                    },
+                    {
+                        "ref": "dat-ref"
+                    },
+                    {
+                        "text": "“as a punishment” (Church and Brodribb 1942)."
+                    }
+                ]
             },
             {
-                "text": "effigiesque et signa quaedam detracta lucis in proelium ferunt; quodque praecipuum fortitudinis incitamentum est, non casus nec fortuita conglobatio turmam aut cuneum facit, sed familiae et propinquitates; et in proximo pignora, unde feminarum"
+                "text": "effigiesque et signa quaedam detracta #lucis# in proelium ferunt; quodque praecipuum fortitudinis incitamentum est, non casus nec fortuita #conglobatio# turmam aut cuneum facit, sed familiae et propinquitates; et in proximo #pignora#, unde feminarum",
+                "notes": [
+                    {
+                        "ref": "abl-sep",
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dlucus1",
+                        "text": "a wood, grove, or thicket of trees sacred to a deity (L&S)."
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dconglobatio",
+                        "text": "sc. <i>militum</i> (@L&S@)."
+                    },
+                    {
+                        "ref": "gap-sunt"
+                    }
+                ]
             },
             {
                 "text": "ululatus audiri, unde vagitus infantium. hi cuique sanctissimi testes, hi maximi laudatores: ad matres, ad coniuges vulnera ferunt; nec illae numerare et exigere plagas pavent, cibosque et hortamina pugnantibus gestant."
