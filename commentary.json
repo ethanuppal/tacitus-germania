@@ -709,7 +709,7 @@
         "text": "War, Government, Women, Religion",
         "sections": [
             {
-                "text": "#Memoriae proditur# quasdam acies inclinatas #iam# et labantes a feminis restitutas constantia #precum# et obiectu pectorum et monstrata comminus captivitate, quam longe impatientius feminarum suarum nomine timent, adeo ut efficacius obligentur animi civitatum quibus inter obsides",
+                "text": "#Memoriae proditur# quasdam acies inclinatas #iam# et labantes a feminis restitutas constantia #precum# et obiectu pectorum et monstrata comminus captivitate, quam longe impatientius feminarum suarum #nomine# timent, #adeo ut# efficacius obligentur #animi civitatum# quibus inter obsides",
                 "notes": [
                     {
                         "ref": "gap-esse",
@@ -721,11 +721,30 @@
                     },
                     {
                         "text": "genitive."
+                    },
+                    {
+                        "link": "https://dcc.dickinson.edu/caesar/book-6/chapter-6-19",
+                        "text": "cf. @Caes. DBG. 6.19@."
+                    },
+                    {
+                        "ref": "res-cls"
+                    },
+                    {
+                        "text": "Simply “state[s]” according to Church and Brodribb."
                     }
                 ]
             },
             {
-                "text": "puellae quoque nobiles imperantur. inesse quin etiam sanctum aliquid et providum putant, nec aut consilia earum"
+                "text": "puellae #quoque nobiles# #imperantur#. inesse quin etiam sanctum aliquid et providum putant, nec aut consilia earum",
+                "notes": [
+                    {
+                        "text": "Tacitus appends an attribute using <i>quoque</i>."
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Dimpero",
+                        "text": "Here constructed with the dative (@L&S@)."
+                    }
+                ]
             },
             {
                 "text": "aspernantur aut responsa neglegunt. vidimus sub divo Vespasiano Veledam diu apud plerosque numinis loco habitam; sed et olim Auriniam et complures alias venerati sunt, non adulatione nec tamquam facerent deas."
