@@ -46,7 +46,7 @@ function main() {
     previousButton = document.getElementById('previous-chapter');
     nextButton = document.getElementById('next-chapter');
     chapterNumberSpan = document.getElementById('chapter-number');
-    chapterNameSpan = document.getElementById('chapter-name')
+    chapterNameSpan = document.getElementById('chapter-name');
     perseusFrame = document.getElementById('perseus-frame');
     perseusInput = document.getElementById('perseus-input');
     searchParams = new URLSearchParams(window.location.search);
@@ -68,27 +68,31 @@ function main() {
             }
         }
         if (first) {
-            for (const section of document.getElementsByClassName('section')) {
-                if (section.dataset.sectionNumber == first.dataset.sectionNumber) {
-                    section.classList.add('highlighted');
-                } else {
-                    section.classList.remove('highlighted');
-                }
-            }
-            for (const noteSectNumber of document.getElementsByClassName('note-section-number')) {
-                if (noteSectNumber.dataset.sectionNumber == first.dataset.sectionNumber) {
-                    noteSectNumber.classList.add('highlighted');
-                } else {
-                    noteSectNumber.classList.remove('highlighted');
-                }
-            }
+            setSectionHighlighted(first.dataset.sectionNumber);
         }
     });
 
     // Load the commentary
     fetchReferenceNotes({ then: () => {
         fetchCommentarySource();
-    } })
+    } });
+}
+
+function setSectionHighlighted(sectionNumber) {
+    for (const section of document.getElementsByClassName('section')) {
+        if (section.dataset.sectionNumber == sectionNumber) {
+            section.classList.add('highlighted');
+        } else {
+            section.classList.remove('highlighted');
+        }
+    }
+    for (const noteSectNumber of document.getElementsByClassName('note-section-number')) {
+        if (noteSectNumber.dataset.sectionNumber == sectionNumber) {
+            noteSectNumber.classList.add('highlighted');
+        } else {
+            noteSectNumber.classList.remove('highlighted');
+        }
+    }
 }
 
 function setChapterFromURL() {
@@ -181,10 +185,23 @@ function loadTextAndCommentary() {
     var foundNotes = false;
     for (const section of chapter.sections) {
         // Add section text
-        if (sectionNumber > 1) {
-            chapterTextP.innerHTML += ' ';
+        const sectionSpan = document.createElement('span');
+        sectionSpan.classList.add('section');
+        if (sectionNumber == 1) {
+            sectionSpan.classList.add('highlighted');
         }
-        chapterTextP.innerHTML += `<span class="section${(sectionNumber == 1) ? (' highlighted') : ('')}" data-section-number="${sectionNumber}">[${sectionNumber}] ${section.text.replaceAll('#', '')}</span>`;
+        sectionSpan.dataset.sectionNumber = sectionNumber;
+        sectionSpan.textContent = '';
+        if (sectionNumber > 1) {
+            sectionSpan.textContent += ' ';
+        }
+        sectionSpan.textContent += `[${sectionNumber}] ${section.text.replaceAll('#', '')}`;
+        chapterTextP.appendChild(sectionSpan);
+
+        sectionSpan.addEventListener('click', function(event) {
+            const sectionNumber = sectionSpan.dataset.sectionNumber;
+            setSectionHighlighted(sectionNumber);
+        });
 
         // Add commentary notes
         if (section.notes != null) {
@@ -192,7 +209,7 @@ function loadTextAndCommentary() {
             const noteWords = [...section.text.matchAll(noteRegex)];
             for (const package of zip(noteWords, section.notes)) {
                 var note = package[1];
-                const noteWord = note.word ?? package[0][1];
+                const noteWord = note.word || package[0][1];
 
                 // Check if it's a reference note
                 var toAdd = '';
@@ -211,8 +228,8 @@ function loadTextAndCommentary() {
                 }
 
                 const noteP = document.createElement('p');
-                noteP.classList.add('commentary-note')
-                noteP.setAttribute('data-section-number', sectionNumber)
+                noteP.classList.add('commentary-note');
+                noteP.setAttribute('data-section-number', sectionNumber);
                 noteP.innerHTML += `<span style="font-weight: bold;">${noteWord}</span>`;
 
                 if (note.link != null && note.text.includes('@')) {
