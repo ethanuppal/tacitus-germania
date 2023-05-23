@@ -689,7 +689,60 @@
                 ]
             },
             {
-                "text": "ululatus audiri, unde vagitus infantium. hi cuique sanctissimi testes, hi maximi laudatores: ad matres, ad coniuges vulnera ferunt; nec illae numerare et exigere plagas pavent, cibosque et hortamina pugnantibus gestant."
+                "text": "ululatus audiri, unde vagitus infantium. hi #cuique# sanctissimi testes, hi maximi laudatores: ad matres, ad coniuges vulnera #ferunt#; nec #illae# numerare et exigere plagas pavent, cibosque et hortamina pugnantibus gestant.",
+                "notes": [
+                    {
+                        "ref": "dat-ref",
+                        "text": "They bear witness to the men's acts in the battlefield."
+                    },
+                    {
+                        "text": "The subject switches to the men."
+                    },
+                    {
+                        "text": "<i>illae</i> now refers to the distal subject, the <i>coniuges</i>."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "text": "War, Government, Women, Religion",
+        "sections": [
+            {
+                "text": "#Memoriae proditur# quasdam acies inclinatas #iam# et labantes a feminis restitutas constantia #precum# et obiectu pectorum et monstrata comminus captivitate, quam longe impatientius feminarum suarum nomine timent, adeo ut efficacius obligentur animi civitatum quibus inter obsides",
+                "notes": [
+                    {
+                        "ref": "gap-esse",
+                        "text": "“Tradition says” (Church and Brodribb 1942)."
+                    },
+                    {
+                        "link": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0059%3Aentry%3Djam",
+                        "text": "Here used in reference to past time. See @L&S@ for more definitions."
+                    },
+                    {
+                        "text": "genitive."
+                    }
+                ]
+            },
+            {
+                "text": "puellae quoque nobiles imperantur. inesse quin etiam sanctum aliquid et providum putant, nec aut consilia earum"
+            },
+            {
+                "text": "aspernantur aut responsa neglegunt. vidimus sub divo Vespasiano Veledam diu apud plerosque numinis loco habitam; sed et olim Auriniam et complures alias venerati sunt, non adulatione nec tamquam facerent deas."
+            }
+        ]
+    },
+    {
+        "text": "War, Government, Women, Religion",
+        "sections": [
+            {
+                "text": "Deorum maxime Mercurium colunt, cui certis diebus humanis quoque hostiis litare fas habent. Herculem ac Martem concessis animalibus placant."
+            },
+            {
+                "text": "pars Sueborum et Isidi sacrificat: unde causa et origo peregrino sacro parum comperi nisi quod signum ipsum in modum liburnae figuratum"
+            },
+            {
+                "text": "docet advectam religionem. ceterum nec cohibere parietibus deos neque in ullam humani oris speciem adsimulare ex magnitudine caelestium arbitrantur: lucos ac nemora consecrant deorumque nominibus appellant secretum illud, quod sola reverentia vident."
             }
         ]
     }
